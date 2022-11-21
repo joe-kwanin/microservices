@@ -17,13 +17,13 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - run: docker-compose -f docker-compose-build.yaml build --parallel
-    - run: docker tag udagram-frontend:local kwamejoedev/udagram-frontend
-    - run: docker tag udagram-api-user kwamejoedev/udagram-api-user
-    - run: docker tag udagram-api-feed kwamejoedev/udagram-api-feed
-    - run: docker tag reverseproxy kwamejoedev/reverseproxy
-    - run: echo "${{ secrets.DOCKER_PASSWORD }}"|docker login -u "${{ secrets.DOCKER_USERNAME }}" --password-stdin
-    - run: docker push kwamejoedev/udagram-frontend
-    - run: docker push kwamejoedev/udagram-api-user
-    - run: docker push kwamejoedev/udagram-api-feed
-    - run: docker push kwamejoedev/reverseproxy
+    - run: docker tag udagram-frontend:local Kwamejoedev/udagram-frontend
+    - run: docker tag udagram-api-user Kwamejoedev/udagram-api-user
+    - run: docker tag udagram-api-feed Kwamejoedev/udagram-api-feed
+    - run: docker tag reverseproxy Kwamejoedev/reverseproxy
+    - run: echo "${{secrets.DOCKER_PASSWORD}}" | docker login -u "${{secrets.DOCKER_USERNAME}}" --password-stdin
+    - run: docker push Kwamejoedev/udagram-frontend
+    - run: docker push Kwamejoedev/udagram-api-user
+    - run: docker push Kwamejoedev/udagram-api-feed
+    - run: docker push Kwamejoedev/reverseproxy
     
