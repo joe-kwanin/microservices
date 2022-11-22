@@ -1,0 +1,10 @@
+
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: aws-env
+data:
+  credentials: |
+    aws_access_key_id=ASIA5SOWWWWYCM26UL4R
+    aws_secret_access_key=dhsa7Id5iuGa47/l4U6um04pfDPk0Xki5FiUpkEL
+    aws_session_token=FwoGZXIvYXdzEJ3//////////wEaDBoh0vREuJ0NSuvtUSK8AU6AiomycRCGQQbZhqywziieVFDnVD1N8Ebfj1A3XB+50SHDxmzHN2k9pp8HtubEVw2C8itm1xaLmjIiLXOMPu03/IXe83fEpghrmeqm3RDkLn0v35F+kC9DZF4Dln69NxqSRfT71CD2MC2vA7E2DnJP2FtGOVuBo9MsYSj+RPAXUHvePUsFfvGKtbzKbZsH1eEAft0VD6O/UQwD2bk2oxOswsSZE8bM0UrNJNxTCZ+8RBfV0QgNT300PazxKLuw75sGMi2FQ5e2Qx/fhMFvaLLo0N0h5y0+CGfSdsAg76qeJgG9jxA6QzxesH4Iek2NSR0=
